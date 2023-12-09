@@ -1,16 +1,15 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class EvilSolution {
     private ArrayList<String> targetList;
-    private int wordLength;
-    private ArrayList<Character> partialSolution;
+    private final ArrayList<Character> partialSolution;
     private int missingChars;
+
     public EvilSolution(ArrayList<String> target){
         this.targetList = target;
-        this.wordLength = targetList.get(0).length();
+        int wordLength = targetList.get(0).length();
 
         missingChars = wordLength;
         this.partialSolution = new ArrayList<>(missingChars);
@@ -69,7 +68,6 @@ public class EvilSolution {
             wordMap.putIfAbsent(pattern, new ArrayList<>());
             wordMap.get(pattern).add(word);
         }
-        System.out.println(wordMap);
 
 //        Only keep the pair of the pattern and the longest list
         String longestPattern = null;
@@ -88,7 +86,6 @@ public class EvilSolution {
             filteredMap.put(longestPattern, wordMap.get(longestPattern));
         }
 
-        System.out.println("filtered map is " + filteredMap);
         return filteredMap;
     }
 

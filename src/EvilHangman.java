@@ -2,22 +2,22 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.*;
 
-public class EvilHangman {
+public class EvilHangMan {
     private Map<Integer, ArrayList<String>> wordList;
-    private ArrayList<String> targetList;
-    private Scanner inputScanner;
+    private final ArrayList<String> targetList;
+    private final Scanner inputScanner;
 
-    private HashSet<Character> previousGuesses;
+    private final HashSet<Character> previousGuesses;
 
-    private TreeSet<Character> incorrectGuesses;
+    private final TreeSet<Character> incorrectGuesses;
 
-    private EvilSolution solution;
+    private final EvilSolution solution;
 
-    public EvilHangman() {
+    public EvilHangMan() {
         this("engDictionary.txt");
     }
 
-    public EvilHangman(String filename){
+    public EvilHangMan(String filename){
         try {
             wordList = dictionaryToMap(filename);
         } catch (IOException e) {
@@ -35,6 +35,30 @@ public class EvilHangman {
         inputScanner = new Scanner(System.in);
         solution = new EvilSolution(targetList);
     }
+    public HashSet<Character> getPreviousGuesses(){
+        return previousGuesses;
+    }
+
+    public TreeSet<Character> getIncorrectGuesses(){
+        return incorrectGuesses;
+    }
+
+    public Map<Integer, ArrayList<String>> getWordList(){
+        return wordList;
+    }
+
+    public ArrayList<String> getTargetList(){
+        return targetList;
+    }
+
+    public Scanner getInputScanner(){
+        return inputScanner;
+    }
+
+    public EvilSolution getSolution(){
+        return solution;
+    }
+
 
     public void start() {
         while (!solution.isSolved()) {
@@ -91,7 +115,6 @@ public class EvilHangman {
     }
 
     private static ArrayList<String> getTargetList(Map<Integer, ArrayList<String>> wordMap){
-
 //        Generate a random length which <= maximum word length of the dictionary
         List<Integer> Length = new ArrayList<>(wordMap.keySet());
         int max  = Collections.max(Length);

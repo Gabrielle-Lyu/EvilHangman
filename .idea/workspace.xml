@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="787ba0af-b88e-4e20-8fa8-ea04a103f281" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/EvilHangman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EvilHangmanRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/EvilSolution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvilHangman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EvilHangman.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvilHangmanRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EvilHangmanRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EvilSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/EvilSolution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +40,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/gabrielle/Documents/23Fall/CIT5910/Homework6-EvilHangman&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/gabrielle/Documents/23Fall/CIT5910/EvilHangman&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -80,6 +79,10 @@
       <workItem from="1701201602360" duration="18000" />
       <workItem from="1701201636717" duration="55000" />
       <workItem from="1701201700971" duration="158000" />
+      <workItem from="1702163702542" duration="26000" />
+      <workItem from="1702163738229" duration="15000" />
+      <workItem from="1702163763299" duration="10000" />
+      <workItem from="1702163792299" duration="12000" />
     </task>
     <servers />
   </component>
